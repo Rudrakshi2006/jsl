@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Theme Preferences</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #eef5ff;
+            color: #234b75;
+            padding: 40px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            background: #ffffff;
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: background 0.3s ease;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        button {
+            padding: 12px 18px;
+            margin: 8px;
+            border: none;
+            border-radius: 5px;
+            background: #3478b9;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        body.dark {
+            background: #252a38;
+            color: #ffffff;
+        }
+
+        body.dark .container {
+            background: #353c4e;
+        }
+
+        body.dark button {
+            background: #6577b8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Theme Preferences</h2>
+    <p>Save your theme using localStorage and sessionStorage.</p>
+
+    <button onclick="setTheme('light')">Light Theme</button>
+    <button onclick="setTheme('dark')">Dark Theme</button>
+    <button onclick="clearPreference()">Clear Preference</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
