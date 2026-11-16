@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction to JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef5ff;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 550px;
+            margin: auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            text-align: center;
+            color: #234b75;
+        }
+
+        h3 {
+            color: #234b75;
+            margin-top: 25px;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 6px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #b8c9dc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: #3478b9;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px 5px 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #285f94;
+        }
+
+        #output {
+            background: #f3f8ff;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 5px;
+            line-height: 1.8;
+        }
+    </style>
+
+    <script>
+        function internalJS() {
+            alert("Hello from Internal JavaScript!");
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Introduction to JavaScript</h2>
+
+    <h3>Types of JavaScript</h3>
+    <button onclick="alert('Hello from Inline JavaScript!')">Inline JS</button>
+    <button onclick="internalJS()">Internal JS</button>
+    <button onclick="externalJS()">External JS</button>
+
+    <h3>User Information</h3>
+    <label for="name">Enter Your Name:</label>
+    <input type="text" id="name" placeholder="Enter name">
+
+    <label for="age">Enter Your Age:</label>
+    <input type="number" id="age" placeholder="Enter age">
+
+    <button onclick="showInfo()">Show Information</button>
+
+    <p id="output"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
