@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String Methods and Regex</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef5ff;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            text-align: center;
+            color: #234b75;
+        }
+
+        h3 {
+            color: #234b75;
+            margin-bottom: 5px;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 7px;
+            font-weight: bold;
+        }
+
+        textarea, input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #b8c9dc;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #3478b9;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            margin-top: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background: #285f94;
+        }
+
+        #output {
+            background: #f3f8ff;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+            line-height: 1.7;
+            overflow-wrap: anywhere;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>String Methods & Regular Expressions</h2>
+
+    <label for="paragraph">Enter a Paragraph:</label>
+    <textarea id="paragraph" rows="4" placeholder="Enter your paragraph"></textarea>
+
+    <label for="email">Enter Email Address:</label>
+    <input type="text" id="email" placeholder="Enter email">
+
+    <button onclick="processString()">Process</button>
+
+    <div id="output">
+        Results will appear here.
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
