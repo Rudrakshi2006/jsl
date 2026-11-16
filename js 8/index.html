@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gym Admission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eaf4f5;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 420px;
+            margin: auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            text-align: center;
+            color: #286b73;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #b5cccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .error {
+            color: #d9534f;
+            font-size: 12px;
+            margin-top: 3px;
+            display: block;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background: #388c92;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background: #2b6d72;
+        }
+
+        #result {
+            color: #2e7d32;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Gym Admission Form</h2>
+
+    <form id="gymForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name">
+        <span id="nameError" class="error"></span>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age">
+        <span id="ageError" class="error"></span>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email">
+        <span id="emailError" class="error"></span>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile">
+        <span id="mobileError" class="error"></span>
+
+        <label for="plan">Membership Plan:</label>
+        <select id="plan">
+            <option value="">Select Plan</option>
+            <option>Monthly</option>
+            <option>Quarterly</option>
+            <option>Yearly</option>
+        </select>
+        <span id="planError" class="error"></span>
+
+        <button type="submit">Submit</button>
+        <p id="result"></p>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
