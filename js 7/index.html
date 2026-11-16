@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef5ff;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 550px;
+            margin: auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            text-align: center;
+            color: #234b75;
+        }
+
+        h3 {
+            color: #234b75;
+            margin-top: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #b8c9dc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: #3478b9;
+            color: white;
+            font-size: 14px;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+
+        li {
+            background: #f3f8ff;
+            padding: 12px;
+            margin-top: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+
+        li span {
+            overflow-wrap: anywhere;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 5px;
+        }
+
+        .edit {
+            background: #e5a04b;
+        }
+
+        .delete {
+            background: #d96565;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>My To-Do List</h2>
+
+    <label for="taskInput">Enter Your Task:</label>
+    <div class="input-group">
+        <input type="text" id="taskInput" placeholder="Enter a task">
+        <button id="addBtn">Add</button>
+    </div>
+
+    <h3>Today's Tasks</h3>
+    <ul id="taskList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
