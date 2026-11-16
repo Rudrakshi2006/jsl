@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Details using Fetch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef5ff;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            text-align: center;
+            color: #234b75;
+        }
+
+        button {
+            background: #3478b9;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background: #285f94;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #b8c9dc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #3478b9;
+            color: white;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f8fbff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Details using Fetch()</h2>
+
+    <button onclick="loadStudents()">Load Students</button>
+
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
