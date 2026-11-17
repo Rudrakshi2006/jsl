@@ -8,7 +8,7 @@ function calculateGrade() {
         return;
     }
 
-    if (!Number.isFinite(marks) || marks < 0 || marks > 100) {
+    if (isNaN(marks) || marks < 0 || marks > 100) {
         alert("Please enter valid marks between 0 and 100!");
         return;
     }
@@ -17,15 +17,20 @@ function calculateGrade() {
 
     if (marks >= 90) {
         grade = "A+";
-    } else if (marks >= 80) {
+    }
+    else if (marks >= 80) {
         grade = "A";
-    } else if (marks >= 70) {
+    }
+    else if (marks >= 70) {
         grade = "B";
-    } else if (marks >= 60) {
+    }
+    else if (marks >= 60) {
         grade = "C";
-    } else if (marks >= 50) {
+    }
+    else if (marks >= 50) {
         grade = "D";
-    } else {
+    }
+    else {
         grade = "F (Fail)";
     }
 

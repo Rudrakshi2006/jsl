@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Palindrome Checker</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial;
             background: #eef5ff;
             padding: 30px;
         }
@@ -13,10 +13,9 @@
         .container {
             max-width: 450px;
             margin: auto;
-            background: #ffffff;
+            background: white;
             padding: 25px;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
         }
 
         h2 {
@@ -47,11 +46,6 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 15px;
-        }
-
-        button:hover {
-            background: #285f94;
         }
 
         #result {
@@ -63,20 +57,24 @@
         }
     </style>
 </head>
+
 <body>
 
 <div class="container">
+
     <h2>Palindrome Checker</h2>
 
-    <label for="word">Enter a Word:</label>
+    <label>Enter a Word:</label>
     <input type="text" id="word" placeholder="Enter word">
 
     <button onclick="checkPalindrome()">Check Palindrome</button>
 
     <div id="result"></div>
+
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
 

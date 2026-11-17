@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Gym Admission Form</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial;
             background: #eaf4f5;
             padding: 30px;
         }
@@ -13,10 +12,10 @@
         .container {
             max-width: 420px;
             margin: auto;
-            background: #ffffff;
+            background: white;
             padding: 25px;
             border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 3px 12px #cbdede;
         }
 
         h2 {
@@ -40,10 +39,8 @@
         }
 
         .error {
-            color: #d9534f;
+            color: red;
             font-size: 12px;
-            margin-top: 3px;
-            display: block;
         }
 
         button {
@@ -55,44 +52,40 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 15px;
-        }
-
-        button:hover {
-            background: #2b6d72;
         }
 
         #result {
-            color: #2e7d32;
+            color: green;
             text-align: center;
             font-weight: bold;
-            margin-top: 15px;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
+
     <h2>Gym Admission Form</h2>
 
     <form id="gymForm">
-        <label for="name">Full Name:</label>
+
+        <label>Full Name:</label>
         <input type="text" id="name">
         <span id="nameError" class="error"></span>
 
-        <label for="age">Age:</label>
+        <label>Age:</label>
         <input type="number" id="age">
         <span id="ageError" class="error"></span>
 
-        <label for="email">Email:</label>
+        <label>Email:</label>
         <input type="text" id="email">
         <span id="emailError" class="error"></span>
 
-        <label for="mobile">Mobile Number:</label>
+        <label>Mobile Number:</label>
         <input type="text" id="mobile">
         <span id="mobileError" class="error"></span>
 
-        <label for="plan">Membership Plan:</label>
+        <label>Membership Plan:</label>
         <select id="plan">
             <option value="">Select Plan</option>
             <option>Monthly</option>
@@ -102,11 +95,15 @@
         <span id="planError" class="error"></span>
 
         <button type="submit">Submit</button>
+
         <p id="result"></p>
+
     </form>
+
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
 
